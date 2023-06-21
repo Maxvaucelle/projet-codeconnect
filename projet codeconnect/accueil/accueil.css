@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: grid;
+ 
+  grid-template-columns: repeat(3,1fr);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: brown;
+  position: sticky;
+  top: 0%;
+}
+
+.search input {
+  width: 200%;
+  height: 20px;
+}
+
+.photoProfil img {
+  width: 100px;
+  border: 3px solid black;
+  border-radius: 30%;
+}
+.actu{
+    width: 70vw;
+    border: 1px solid;
+}
+
+.right {
+  background-color: coral;
+width: auto;
+height: auto;
+
+
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    
+  background-color: cyan;
+ 
+}
+
+.menu-burger ul li {
+  list-style: none;
+  text-align: justify;
+}
+
+.titreSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.postActu {
+  width: 70%;
+  background-color: gray;
+}
+
+.container-post {
+  background-color: gray;
+  margin: 10% 5%;
+  border: 1px solid transparent;
+
+}
+.userpost {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+.photo img {
+  width: 80px;
+  border: 3px solid black;
+  border-radius: 30%;
+  margin: 2%;
+}
+.content {
+  background-color: aliceblue;
+  height: 180px;
+}
