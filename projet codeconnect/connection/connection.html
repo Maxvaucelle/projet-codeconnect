@@ -4,28 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../connection/responsive.css">
     <title>Sign-up/Sign-in</title>
 </head>
 <body>
+
+    <div class="pageConnexion">
+
+        <form action="#" method="get">
+            <h1>Connexion</h1>
     
-    <form action="#" method="get">
-
-        <div class="input">
+            <div class="input-connect">
+    
+                <div class="input mail">
+                    
+                    <input type="email" id="mail" placeholder="E-mail" required>
+                </div>
+        
+                <div class="input password">
+        
+                    <input type="password" id="mdp" placeholder="Mot de passe" required>
+                    <img src="../ressources/icons8-visible-32.png" id="eye" onclick="changer()" >
+                </div>
+                <div class="forgetPassw">
+                    <a href="">Mot de passe oublié ?</a>
+                </div>
+       
+            </div>
+    
             
-            <input type="email" id="mail" placeholder="E-mail" required>
-        </div>
-        <div class="input">
-
-            <input type="password" id="mdp" placeholder="Mot de passe" required>
-            <img src="icons8-cacher-32.png" id="eye" onclick="changer()" >
-        </div>
-
-        <div class="input submit" onclick="document.fo.submit()">S'authentifier</div>
-        <div class="connect">
             
-          <p>Vous n'avez pas de compte ?</p> <a href="inscription.html" class="sign-up">S'inscrire</a>
-        </div>
-    </form>
+            <div class="input submit" onclick="document.fo.submit()">S'authentifier</div>
+            <div class="connect">
+                
+              <p>Vous n'avez pas de compte ?</p> <a href="inscription.html" class="sign-up">S'inscrire</a>
+            </div>
+        </form>
+    </div>
     <script src="script.js">
    
     </script>

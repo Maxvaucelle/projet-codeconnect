@@ -4,13 +4,14 @@ body {
   height: 100%;
 }
 
-main {
+/* main {
   display: grid;
  
   grid-template-columns: repeat(3,1fr);
-}
+} */
 
-header {
+/* header {
+    
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,26 +30,101 @@ header {
   height: 50px;
   border: 3px solid black;
   border-radius: 50%;
-  
 }
-.actu{
+
+.logo-recherche{
+  display: flex;
+  align-items: center;
+  margin-left: 50%;
+} */
+/* .actu{
     width: 75vw;
     margin-left: 15%;
     border: 1px solid;
-}
+} */
 
 .right {
-  background-color: coral;
-width: 12%;
-height: 100vw;
+  background-color: rgb(8, 8, 8);
+width: 20%;
+height: 40vw;
+border-radius: 5px;
 position: fixed;
 right: 0;
 padding-top: 2%;
 padding-left: 2%;
-
-
 }
-.left {
+
+.right .search-profil{
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  width: 80%;
+    border: none;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.8);
+    vertical-align: middle;
+    outline: none;
+    padding: 3%;
+  text-align: center;
+}
+
+.search-profil img{
+  position: relative;
+    z-index: 5;
+    left: -10%;
+    height:35px ;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.contact{
+  
+  width: 90%;
+  height: 90%;
+  margin-top: 5%;
+  overflow-y: auto;
+  
+  
+}
+.contact::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+
+.photo img {
+  width: 40px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 50%;
+  margin: 2%;
+}
+.person{
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 0;
+    padding: 1%;
+    border: 1px outset;
+    border-radius: 10px;
+    background-color: white;
+}
+.name{
+  text-align: justify;
+}
+.person .photo{
+  margin: 0 5% 0 5%;
+}
+.person .options{
+           display: flex;
+           align-items: center;
+}
+
+
+.options img{
+  width: 25px;
+} 
+ .left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -89,22 +165,9 @@ padding-left: 2%;
   display: flex;
   width: 20%;
   justify-content: space-between;
-}
-.photo img {
-  width: 40px;
-  height: 40px;
-  border: 3px solid black;
-  border-radius: 50%;
-  margin: 2%;
-}
-.content {
+} 
+ .content {
   background-color: aliceblue;
   height: 180px;
 }
 
-.person{
-    display: flex;
-    justify-content: space-around;
-    margin: 10% 0;
-   
-}

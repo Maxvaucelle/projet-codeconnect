@@ -1,52 +1,123 @@
 body{
     margin: 0;
     height: auto;
+    
+}
+h1{
+    
+    margin-bottom: 10%;
+    color: white;
+}
+
+.pageConnexion{
+    height: 65.1em;
+    background-color: rgb(71, 68, 68);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 form{
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 60px;
+    width: 40%;
+    background-color: black;
+    padding: 10px 60px ;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
 }
 
-.input{
-    background-color:rgba(255,255,255,0.8) ;
-    padding: 4px;
-    margin: 10px 0;
+.input-connect{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
 }
+
 
 input{
-    width: 90%;
+    width: 100%;
     border: none;
-    background: none;
-    outline: none;
+    background: rgba(255,255,255,0.8);
     vertical-align: middle;
+    outline: none;
+    border-radius: 15px;
+    padding: 3%;
+    
+}
+.mail{
+    width: 87%;
+    margin-bottom: 10%;
 }
 
+.password{
+    margin-bottom: 2%;
+    display: flex;
+}
+
+
+
+.password img{
+    
+    position: relative;
+    z-index: 5;
+    left: -10%;
+    height:35px ;
+    cursor: pointer;
+   
+    
+}
+
+
 .submit{
-    background-color: #41666C;
-    padding: 6px 0;
+    background-color:white;
+    padding: 10px 20px;
     text-align: center;
     cursor: pointer;
     color: aliceblue;
+    margin-top: 5%;
+    border-radius: 15px;
+    color: black;
 }
 
 .submit:hover{
     filter: brightness(1.1);
+    background-color:#41666C;
+    transition: 0.6s;
+    color: white;
 }
 
-.input img{
-    height:20px ;
-    cursor: pointer;
-    vertical-align: middle;
+.forgetPassw{
+    text-align: end;
+    margin-right: 10%;
 }
+
 
 .connect{
     display: flex;
     justify-content: end;
+    align-items: center;
+    align-self: flex-end;
+    
 }
+
+.connect p{
+    color: white;
+    margin-right: 5%;
+}
+
+.connect a{
+    text-decoration: none;
+    background-color: #41666C;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: aliceblue;
+    margin-left: 1%;
+}
+
+.connect:hover{
+    filter: brightness(1.5);
+}
+
