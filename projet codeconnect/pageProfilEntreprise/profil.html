@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/projet codeconnect/pageProfilEntreprise/style.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="profil-box">
+      <h1>Profil</h1>
+      <div class="profil-content">
+        <div class="profil-fixedContent">
+          <div class="profil-caract">
+            <div class="profil-photo">
+              <img
+                src="/projet codeconnect/ressources/icons8-facebook-50.png"
+                alt=""
+              />
+            </div>
+            <div class="profil-name">
+              <p>Nom de l'entreprise</p>
+              <p>Domaine de l'entreprise</p>
+            </div>
+          </div>
+          <div class="profil-follow">
+            <input type="button" id="follow" value="Suivre" />
+          </div>
+        </div>
+        <div class="biography">
+          <h2>Biographie</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+            autem voluptas et sequi adipisci laudantium nam sed quod iusto
+            reiciendis perferendis rem, quo modi natus earum dolor,
+            necessitatibus nihil facere.
+          </p>
+        </div>
+
+        <div class="composant-post">
+          <div class="fixedCaract-post">
+            <div class="caract-post">
+              <div class="photo-post">
+                <img
+                  src="/projet codeconnect/ressources/icons8-facebook-50.png"
+                  alt=""
+                />
+              </div>
+              <div class="name-post">
+                <p>Nom de l'entreprise</p>
+                <p>Date de publication</p>
+              </div>
+            </div>
+            <div class="menu-options">
+              <a href=""
+                ><img
+                  src="../ressources/icons8-menu-2-30.png"
+                  class="menu"
+                  alt="bouton menu"
+              /></a>
+            </div>
+          </div>
+          <div class="content-post">
+            <div
+              class="drag-drop"
+              id="div1"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+            ></div>
+            <div class="textarea-post">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates, tempore odit a dolorum amet dolor eaque perspiciatis
+                sequi incidunt quod inventore voluptatibus magni? Perspiciatis,
+                perferendis molestias sed praesentium deserunt repudiandae.
+              </p>
+
+            </div>
+            <div class="buttonnavbar" id="navbarbutton">
+              <button class="iconbutton like">
+                <a href="#">
+                  <img
+                    id="likebutton"
+                    src="/projet codeconnect/ressources/like.png"
+                    alt="likebutton"
+                    title="likebutton" />
+                 </a>
+              </button>
+        
+              <button class="iconbutton share">
+                <a href="#">
+                  <img src="/projet codeconnect/ressources/share.png" alt="sharebutton" title="sharebutton"
+                /></a>
+              </button>
+              <button class="iconbutton comment">
+                <a href="#"
+                  ><img src="/projet codeconnect/ressources/comment.png" alt="commentbutton" title="comment"
+                /></a>
+              </button>
+              <button class="iconbutton merci" title="thankbutton">
+                <a><p id="merci">merci</p></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let buttonlike = document.getElementById('likebutton');
+let navbarbutton = document.getElementById('navbarbutton');
+let toggle = false;
+let merciElement = document.getElementById("merci");
+
+buttonlike.addEventListener("click", function() {
+    toggle = !toggle;
+    if (toggle) {
+        buttonlike.src = "/projet codeconnect/ressources/like.png";
+    } else { buttonlike.src = "/projet codeconnect/ressources/like2.png"
+    }
+});
+
+merciElement.addEventListener("click", function() {
+    merciElement.classList.toggle("highlight");
+  });
+    </script>
+    <!-- <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script> -->
+  </body>
+</html>

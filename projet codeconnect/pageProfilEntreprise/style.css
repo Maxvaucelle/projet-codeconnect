@@ -1,0 +1,147 @@
+.profil-box{
+    background-color: black;
+    border-radius: 15px;
+    width: 60%;
+    height: 45vw;
+    padding: 2%;
+    position: fixed;
+    right: 2%;
+    
+    }
+
+    h1, h2, p{
+        color: aliceblue;
+    }
+
+   .profil-name p{
+        font-size: large;
+    }
+
+
+
+    .profil-content{
+        background-color: grey;
+         border-radius: 15px;
+         width: 100%;
+         height: 42vw;
+         
+    }
+
+    .profil-fixedContent{
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+        align-items: center;
+    }
+
+    .profil-caract{
+        display: flex;
+        align-items: center;
+        width: 40%;
+    }
+
+    .profil-photo img {
+       height: 150px;
+        border-radius: 50%;
+        background-color: aliceblue;
+    }
+
+    .profil-name{
+        margin-left: 5%;
+    }
+
+    .profil-follow input{
+        border-radius: 35px;
+        border: none;
+        width: 120px;
+        padding: 10%;
+    }
+
+    .biography{
+        text-align: center;
+        margin:0 10%;
+    }
+
+    .composant-post{
+        background-color: rgb(53, 49, 49);
+        border-radius: 15px;
+        margin: 0 5%;
+    }
+
+    .fixedCaract-post{
+       display: flex;
+       justify-content: space-between; 
+       padding: 1% 1% ;
+    }
+
+    .caract-post{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .content-post{
+        padding: 2%; 
+    }
+
+    .textarea-post{
+        text-align: justify;
+        padding: 0 5%;
+    }
+
+    
+
+    .name-post p{
+        margin: 0;
+    }
+
+    .buttonnavbar {
+        
+        border-radius: 5px;
+        display: flex;
+        margin: 5% 0 0 0;
+        width: 100%;
+        height: 20%;
+        justify-content: space-around;
+      
+      }
+      
+      .iconbutton {
+         background: none;
+          border: none;
+      }
+
+      .iconbutton img{
+        height: 20px ;
+      }
+      
+      
+      .like {
+          border: none;
+          height: 20px;
+          margin-top: 10px;
+      }
+      
+      
+      
+      .merci {
+          color: white;
+          font-weight: 600;
+      
+      }
+      
+      
+      
+      .highlight {
+          color: rgb(0, 0, 0);
+          font-weight: bold;
+          transform: scale(1.2);
+              transition: transform 0.2s;
+        }
+
+    /* .drag-drop{
+        border: 1px solid;
+        
+    } */
+    
+   
