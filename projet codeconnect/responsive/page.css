@@ -1,0 +1,250 @@
+body{
+    background-color: #2e3135;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 100%;
+    width: auto;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 2%;
+    text-align: start;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+
+}
+
+
+
+.connexion {
+
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.inscription {
+    text-align: center;
+
+
+}
+
+.search_box img {
+    margin-top: 2%;
+    height: 20px;
+    position: relative;
+    left: -15%;
+    vertical-align: middle;
+
+}
+
+.search_box {
+    display: flex;
+    margin-left: 10%;
+
+}
+
+input {
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 4%;
+    vertical-align: middle;
+
+}
+
+.blanc:hover {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.blanc2:hover {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #f8f6f6;
+    padding: 4%;
+    text-align: center;
+}
+
+.connexioninscription {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5%;
+    width: 15%;
+}
+
+.sidebarleft {
+    position: fixed;
+    width: 20%;
+    height: 500px;
+    background: #646d80;
+    color: #e2e8f0;
+    padding: 20px;
+    overflow: auto;
+    margin-top: 60px;
+}
+
+.sidebarleft ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebarleft li {
+    margin-bottom: 10px;
+}
+
+.sidebarleft a {
+    display: flex;
+    align-items: center;
+    color: #0d0d0e;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.sidebarleft a i {
+    margin-right: 10px;
+}
+
+.sidebarleft a span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.sidebarleft a:hover {
+    color: #d113d8;
+}
+
+img {
+    width: 15%;
+}
+
+.mentionsidebar {
+    position: absolute;
+    bottom: 0;
+}
+
+li img {
+    margin-right: 10px;
+}
+
+.right {
+    background-color: rgb(8, 8, 8);
+  width: 20%;
+  height: 40vw;
+  border-radius: 5px;
+  position: fixed;
+  right: 0;
+  padding-top: 2%;
+  padding-left: 2%;
+  display: none;
+  }
+  
+  .right .search-profil{
+    display: flex;
+    justify-content: center;
+  }
+  
+  input{
+    width: 80%;
+      border: none;
+      border-radius: 15px;
+      background: rgba(255,255,255,0.8);
+      vertical-align: middle;
+      outline: none;
+      padding: 3%;
+    text-align: center;
+  }
+  
+  .search-profil img{
+    position: relative;
+      z-index: 5;
+      left: -10%;
+      height:35px ;
+      cursor: pointer;
+      vertical-align: middle;
+  }
+  
+  .contact{
+    
+    width: 90%;
+    height: 90%;
+    margin-top: 5%;
+    overflow-y: auto;
+    
+    
+  }
+  .contact::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+  }
+
+  .photo img {
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin: 2%;
+  }
+  .person{
+      display: flex;
+      justify-content: space-between;
+      margin: 10% 0;
+      padding: 1%;
+      border: 1px outset;
+      border-radius: 10px;
+      background-color: white;
+  }
+  .name{
+    text-align: justify;
+  }
+  .person .photo{
+    margin: 0 5% 0 5%;
+  }
+  .person .options{
+             display: flex;
+             align-items: center;
+  }
+  
+  
+  .options img{
+    width: 25px;
+  } 
