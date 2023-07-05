@@ -1,0 +1,100 @@
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;  
+    justify-content: center;
+}
+
+.logo {
+    max-width: 100%;
+    width: auto;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 2%;
+    text-align: start;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    
+    text-align: center;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+
+} 
+
+
+
+.connexion { 
+    
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.inscription {
+    text-align: center;
+    
+    
+}
+.search_box img {
+    margin-top: 2%;
+    height: 20px;
+    position: relative;
+    left: -15%;
+    vertical-align: middle;
+    
+}
+.search_box {
+    display: flex;
+    margin-left: 10%;
+    
+}
+input {
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 4%;
+    vertical-align: middle;
+    
+}
+
+.blanc:hover {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+}
+.blanc2:hover {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #f8f6f6;
+    padding: 4%;
+    text-align: center;
+}
+
+.connexioninscription {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5%;
+    width: 15%;
+}

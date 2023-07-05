@@ -1,0 +1,108 @@
+body{
+  margin: 0;
+}
+.inscription{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vw;
+    background-color: #555;
+    
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    border: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    background-color: rgb(34, 31, 31);
+    width: 60%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin: 15px;
+
+  }
+  
+  input[type="submit"] {
+    width: 85%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .alternative-login,
+  .privacy-policy {
+    margin-top: 20px;
+    text-align: center;
+    
+  }
+  
+  .alternative-login a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .privacy-policy a {
+    color: #a89d9d;
+    text-decoration: none;
+  }
+  
+  button {
+    margin: 20px;
+    display: inline;
+    width: 110px;
+    height: 30px;
+    border-color: #555;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    font-size: smaller;
+  }
+
+ 
+ #testbtn {
+padding-left: 72px;
+
+ }
+
+ @media all and (max-width:1130px) and (min-width:700px){
+form{
+  height: 80%;
+}
+ }
+

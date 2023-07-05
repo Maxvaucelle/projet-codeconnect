@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/cssreact/_connexion.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pageConnexion">
+        <form action="/connexion" method='post' onSubmit={handleSubmitC}>
+            <h1>Connexion</h1>
+             
+              <input type="text" name='Mail' value={mailC} onChange={handleChangeMailC} placeholder='E-mail' />
+      
+             
+              <input type="password" name='mdp' value={passwordC} onChange={handleChangePasswordC} placeholder='Mot de passe'/>
+              <AiFillEyeInvisible onClick={changer} className='invisible'/>
+             
+              <a href='#' className='forgetPassw'>Mot de passe oublié ?</a>
+              
+      
+              <button type='submit'>Connexion</button>
+              <p>{msgPassword}</p>
+            </form>
+
+    </div>
+
+
+
+</body>
+</html>
